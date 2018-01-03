@@ -2,12 +2,12 @@
 FILE NAME:     Game24.java
 VERSION:       1.0
 DESCRIPTION:   Game24 implementation using JavaFX
-CLASS:         COMP 494, Spring 2016 Semester @ SMSU
-INSTRUCTOR:    Professor Shushuang Man <mans@smsu.edu>
 AUTHORS:       Nikolay Ivanov (Nick) <nikolay.ivanov@smsu.edu>
                      <nnrowan@gmail.com
                Anthony Angrimson <anthony.angrimson@smsu.edu>
                      <angrinord@gmail.com>
+               Jason Hartwick
+               		 <jason.hartwick@mail.com>
 LICENSE:       GNU General Public License v.3
                [http://www.gnu.org/licenses/gpl-3.0.en.html]
 DATE:          1/25/2016
@@ -268,21 +268,18 @@ public class Game24 extends Application {
 	    }
 	});
 
-	VBox vbox = new VBox();	
-	vbox.setPadding(new Insets(10));
-	vbox.setAlignment(Pos.CENTER);
-	vbox.getChildren().addAll(intro, hbox2, play24, result, quit);
-	
-	Scene scene = new Scene(vbox, 640, 640);
+		VBox vbox = new VBox();
+		vbox.setPadding(new Insets(10));
+		vbox.setAlignment(Pos.CENTER);
+		vbox.getChildren().addAll(intro, hbox2, play24, result, quit);
 
-	primaryStage.setTitle("Game24");
-	primaryStage.setScene(scene);
-	primaryStage.show();
+		Scene scene = new Scene(vbox, 640, 640);
+
+		primaryStage.setTitle("Game24");
+		primaryStage.setScene(scene);
+		primaryStage.show();
     }
-    
-    /**
-     * @param args the command line arguments
-     */
+
     public static void main(String[] args) {
 	launch(args);
     }
